@@ -1,10 +1,11 @@
 import React from 'react'
-import {StyleSheet, Text, View} from 'react-native'
+import {StyleSheet, View} from 'react-native'
+import Task from "../components/Task";
 
 export default function TaskScreen() {
     return (
         <View>
-            <Text></Text>
+           <Task/>
         </View>
     );
 };

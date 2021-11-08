@@ -1,10 +1,13 @@
 
 import {Dispatch} from "redux";
 import {AxiosError} from "axios";
-import {authAPI} from "../api/todolist-api";
+import {authAPI, TaskType} from "../api/todolist-api";
 
 export type RequestStatusType = 'idle' | 'loading' | 'succeeded' | 'failed'
 
+export type TasksStateType = {
+    [key: string]: Array<TaskType>
+}
 
 type ActionsType = SetAppStatusType | SetAppErrorType|SetIsInitializedType
 export type SetAppErrorType = ReturnType<typeof setAppErrorAC>

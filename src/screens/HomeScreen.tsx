@@ -1,11 +1,11 @@
 import React from 'react'
-import {StyleSheet, Text, View} from 'react-native'
-import AppBar from "../components/AppBar";
+import {StyleSheet, View} from 'react-native'
+import TodoListsList from "../components/TodoListsList";
 
 export default function HomeScreen() {
     return (
         <View>
-            <AppBar/>
+            <TodoListsList/>
         </View>
     );
 };
